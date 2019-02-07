@@ -1,0 +1,18 @@
+
+<mat-form-field appearance="outline" style="width: 500px;" [formGroup]="group">
+  <mat-label>{{label}}</mat-label>
+  <input matInput color=primary [placeholder]="placeholder" [matAutocomplete]="auto" [formControlName]="name">
+  <mat-icon color=primary matSuffix><i class="fas fa-search"></i></mat-icon>
+</mat-form-field>
+<span *ngIf="isLoading" style="position: absolute; margin: 16px;">
+  <mat-spinner [color]="'primary'" [mode]="'indeterminate'" [diameter]="30"></mat-spinner>
+</span>
+<mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn" (optionSelected)='itemSelectionChanged($event.option.value)'>
+  <ng-container *ngIf="!isLoading">
+    <mat-option *ngFor="let m of moedas" 
+                [value]="m"  
+                [disabled]="m.source === 'Item not found'">
+      <span>{{ m.description }}</span>
+    </mat-option>
+  </ng-container>
+</mat-autocomplete>

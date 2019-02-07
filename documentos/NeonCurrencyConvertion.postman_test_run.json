@@ -1,0 +1,162 @@
+{
+	"id": "f891bef0-9e69-4095-a8b6-752a47da7d04",
+	"name": "NeonCurrencyConvertion",
+	"allTests": [],
+	"timestamp": "2019-02-07T11:19:44.772Z",
+	"collection_id": "ed6fc9dc-8b6c-44b1-9213-efcbd31972e6",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "0",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "ed6fc9dc-8b6c-44b1-9213-efcbd31972e6",
+		"name": "NeonCurrencyConvertion",
+		"description": "",
+		"auth": null,
+		"events": null,
+		"variables": [],
+		"order": [
+			"f750b6f0-b4d1-493c-a9d7-d5215b8a2c9c",
+			"0f65676f-f213-468b-a75f-edc58d419707",
+			"37aabae7-e534-43ed-977c-e50e1147dd73"
+		],
+		"folders_order": [],
+		"owner": "4372747",
+		"permissions": {},
+		"favorite": false,
+		"shared": false,
+		"type": "collection",
+		"depth": 0
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"name": "Listar todas as Moedas",
+			"id": "f750b6f0-b4d1-493c-a9d7-d5215b8a2c9c",
+			"url": "https://localhost:44393/api/v1/ConverterMoeda/listar",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {},
+			"times": [
+				"653"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "653",
+			"totalRequestTime": "653",
+			"iterationResults": {}
+		},
+		{
+			"name": "ConverterMoeda - USD to BRL",
+			"id": "0f65676f-f213-468b-a75f-edc58d419707",
+			"url": "http://localhost:63651/api/v1/ConverterMoeda/converter",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {},
+			"times": [
+				"600"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "600",
+			"totalRequestTime": "600",
+			"iterationResults": {}
+		},
+		{
+			"name": "ConverterMoeda - BRL to USD",
+			"id": "37aabae7-e534-43ed-977c-e50e1147dd73",
+			"url": "http://localhost:63651/api/v1/ConverterMoeda/converter",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {},
+			"times": [
+				"848"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "848",
+			"totalRequestTime": "848",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 0,
+	"totalFail": 0,
+	"totalTime": 2101,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "Listar todas as Moedas",
+			"id": "f750b6f0-b4d1-493c-a9d7-d5215b8a2c9c",
+			"url": "https://localhost:44393/api/v1/ConverterMoeda/listar",
+			"time": "2019-02-07T11:19:44.772Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "ConverterMoeda - USD to BRL",
+			"id": "0f65676f-f213-468b-a75f-edc58d419707",
+			"url": "http://localhost:63651/api/v1/ConverterMoeda/converter",
+			"time": "2019-02-07T11:19:44.772Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "ConverterMoeda - BRL to USD",
+			"id": "37aabae7-e534-43ed-977c-e50e1147dd73",
+			"url": "http://localhost:63651/api/v1/ConverterMoeda/converter",
+			"time": "2019-02-07T11:19:44.772Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		}
+	],
+	"synced": false
+}

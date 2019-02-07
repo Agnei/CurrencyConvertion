@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "ed6fc9dc-8b6c-44b1-9213-efcbd31972e6",
+		"name": "NeonCurrencyConvertion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listar todas as Moedas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44393/api/v1/ConverterMoeda/listar",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44393",
+					"path": [
+						"api",
+						"v1",
+						"ConverterMoeda",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConverterMoeda - USD to BRL",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"source\": \"USD\",\r\n  \"target\": \"BRL\",\r\n  \"value\": 1\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:63651/api/v1/ConverterMoeda/converter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "63651",
+					"path": [
+						"api",
+						"v1",
+						"ConverterMoeda",
+						"converter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConverterMoeda - BRL to USD",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"source\": \"USD\",\r\n  \"target\": \"BRL\",\r\n  \"value\": 1\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:63651/api/v1/ConverterMoeda/converter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "63651",
+					"path": [
+						"api",
+						"v1",
+						"ConverterMoeda",
+						"converter"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

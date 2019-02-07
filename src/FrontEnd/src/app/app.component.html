@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="row">
+    
+    <form [formGroup]="groupApp">
+             
+      <mat-card>
+        <h3>Conversão de Moeda</h3>
+      <mat-grid-list cols="2" rowHeight="80px">
+        <mat-grid-tile>
+          <app-selecao-moeda [placeholder]="'Moeda Local'" 
+                             [label]="'Digite Moeda Local'" 
+                             [name]="'source'" 
+                             [group]="groupApp"
+                             (itemSelectChanged)="selectionMoedaChange($event)"></app-selecao-moeda>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <app-selecao-moeda [placeholder]="'Moeda Pretendida'" 
+                               [label]="'Digite Moeda Pretendida'" 
+                               [name]="'target'" 
+                               [group]="groupApp"
+                               (itemSelectChanged)="selectionMoedaChange($event)"></app-selecao-moeda>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-form-field appearance="outline" style="width: 500px;">
+            <mat-label>Valor para converter</mat-label>
+            <input matInput placeholder="Valor para converter"  
+                            formControlName="sourceAmount"
+                            (input)="onAmountchChange($event.target.value, 'source')">
+          </mat-form-field>
+        </mat-grid-tile>
+        <br>
+        <mat-grid-tile>
+            
+          <mat-form-field appearance="outline" style="width: 500px;">
+            <mat-label>Valor convertido</mat-label>
+            <input matInput placeholder="Valor convertido" 
+                            formControlName='targetAmount'
+                            (input)="onAmountchChange($event.target.value, 'target')">
+          </mat-form-field>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </mat-card>
+ 
+  </form>
+  </div>
+</div>

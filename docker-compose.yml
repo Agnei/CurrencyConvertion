@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  conversormoeda.webapi:
+    image: ${DOCKER_REGISTRY}conversormoedawebapi
+    build:
+      context: .
+      dockerfile: src/Adapters/ConversorMoeda.WebApi/Dockerfile
+      ports:
+       - "63651:80"
+       - "44393:443"

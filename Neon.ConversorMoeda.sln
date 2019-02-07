@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{F62464CC-0543-47A6-8A4D-BB626ACCAB0F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapters", "Adapters", "{A409A1A0-4B70-4C37-9943-A681A72D647C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{E4047A8A-2B76-408D-BFBB-3838F0C93646}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConversorMoeda.Application", "src\Application\ConversorMoeda.Application\ConversorMoeda.Application.csproj", "{B69CF52D-0426-4D4B-B717-BBEB7D27D53F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.Core", "src\Infrastructure\Infrastructure.Core\Infrastructure.Core.csproj", "{F04C7ACC-C43E-4F18-842D-267055E45675}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConversorMoeda.CurrencyLayer", "src\Adapters\ConversorMoeda.CurrencyLayer\ConversorMoeda.CurrencyLayer.csproj", "{78C47862-3E88-4A53-A728-EDBA63A55B8A}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{437D7131-E764-48B6-896F-2F2463CC28A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{AB9CB6B0-27ED-4A6E-9CA6-EFABC82EA980}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test.Unit", "src\Adapters\Tests\Test.Unit\Test.Unit.csproj", "{274FC946-265F-4F52-A572-30AF70B392C3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConversorMoeda.WebApi", "src\Adapters\ConversorMoeda.WebApi\ConversorMoeda.WebApi.csproj", "{B8174163-1467-45E5-BDAB-5DF366388804}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B69CF52D-0426-4D4B-B717-BBEB7D27D53F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B69CF52D-0426-4D4B-B717-BBEB7D27D53F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B69CF52D-0426-4D4B-B717-BBEB7D27D53F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B69CF52D-0426-4D4B-B717-BBEB7D27D53F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F04C7ACC-C43E-4F18-842D-267055E45675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F04C7ACC-C43E-4F18-842D-267055E45675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F04C7ACC-C43E-4F18-842D-267055E45675}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F04C7ACC-C43E-4F18-842D-267055E45675}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78C47862-3E88-4A53-A728-EDBA63A55B8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78C47862-3E88-4A53-A728-EDBA63A55B8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78C47862-3E88-4A53-A728-EDBA63A55B8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78C47862-3E88-4A53-A728-EDBA63A55B8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{437D7131-E764-48B6-896F-2F2463CC28A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{437D7131-E764-48B6-896F-2F2463CC28A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{437D7131-E764-48B6-896F-2F2463CC28A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{437D7131-E764-48B6-896F-2F2463CC28A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{274FC946-265F-4F52-A572-30AF70B392C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{274FC946-265F-4F52-A572-30AF70B392C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{274FC946-265F-4F52-A572-30AF70B392C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{274FC946-265F-4F52-A572-30AF70B392C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8174163-1467-45E5-BDAB-5DF366388804}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8174163-1467-45E5-BDAB-5DF366388804}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8174163-1467-45E5-BDAB-5DF366388804}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8174163-1467-45E5-BDAB-5DF366388804}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B69CF52D-0426-4D4B-B717-BBEB7D27D53F} = {F62464CC-0543-47A6-8A4D-BB626ACCAB0F}
+		{F04C7ACC-C43E-4F18-842D-267055E45675} = {E4047A8A-2B76-408D-BFBB-3838F0C93646}
+		{78C47862-3E88-4A53-A728-EDBA63A55B8A} = {A409A1A0-4B70-4C37-9943-A681A72D647C}
+		{AB9CB6B0-27ED-4A6E-9CA6-EFABC82EA980} = {A409A1A0-4B70-4C37-9943-A681A72D647C}
+		{274FC946-265F-4F52-A572-30AF70B392C3} = {AB9CB6B0-27ED-4A6E-9CA6-EFABC82EA980}
+		{B8174163-1467-45E5-BDAB-5DF366388804} = {A409A1A0-4B70-4C37-9943-A681A72D647C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7BCF69B-C955-47F4-8636-226F790B1B95}
+	EndGlobalSection
+EndGlobal
