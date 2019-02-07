@@ -21,7 +21,7 @@ export class ConverterMoedaService  {
 
     private URLs = {
         getMoedaSuportadas: 'assets/moedas.json',
-        postConverterMoeda: 'http://localhost:63651/api/v1/ConverterMoeda/converter'
+        postConverterMoeda: 'api/v1/ConverterMoeda/converter'
     };
 
     constructor(private http: HttpClient) {}
@@ -30,8 +30,8 @@ export class ConverterMoedaService  {
         return this.http.get<ListMoedaMv[]>(this.URLs.getMoedaSuportadas);
     }
 
-    public postConverterMoeda(command: ConverterMoedaCommand): Observable<ConverterMoedaModelView> {
-        return this.http.put<ConverterMoedaModelView>(this.URLs.postConverterMoeda, command);
+    public postConverterMoeda(command: ConverterMoedaCommand): Observable<any> {
+        return this.http.put<any>(this.preperUrl(this.URLs.postConverterMoeda), command);
     }
 
     private preperUrl(url: string): string
