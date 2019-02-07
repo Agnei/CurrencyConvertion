@@ -44,15 +44,15 @@ Project to provide currency conversion in real time. (Interview teste Neon).
 
 ## Layers
 
-![Screenshot](documentos/Arquitetura_Hexagonal.png)
+![Screenshot](documentos/Arquitetura_Hexagonal.PNG)
 
 ## Angular
 
-![Screenshot](documentos/Angular.png)
+![Screenshot](documentos/Angular.PNG)
 
 ## Swagger
 
-![Screenshot](documentos/Swagger.Service.png)
+![Screenshot](documentos/Swagger.Service.PNG)
 
 ## Postman Collection
 
