@@ -1,11 +1,10 @@
 # CurrencyConvertion
 
-![](documentos/Arquitetura_Hexagonal.PNG)
+Project to provide currency conversion in real time.
 
 # CurrencyConvertion Web
 
-Project to provide currency conversion in real time. (Interview teste Neon).
-
+![](documentos/Pagina_Web.gif)
 
 ## Technologies
 
