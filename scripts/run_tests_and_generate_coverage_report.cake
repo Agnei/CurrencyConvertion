@@ -91,8 +91,6 @@ Task("Report")
         ArgumentCustomization = args => args.Append($"-reportTypes:{reportTypes}")
     };
 
-    Write(coverageFilePath);
-    Write(coverageDirectory);
     ReportGenerator(coverageFilePath, coverageDirectory, reportSettings);
 });
 
