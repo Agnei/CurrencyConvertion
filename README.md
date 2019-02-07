@@ -68,7 +68,7 @@ Project to provide currency conversion in real time.
 
 ## API Code Covered
 
-![Screenshot](documentos/PostmanCollectionResult.PNG)
+![Screenshot](documentos/CodeCovered.PNG)
 
 
 ## Run API Command Line
