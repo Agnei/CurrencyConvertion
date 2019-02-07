@@ -21,6 +21,7 @@ Project to provide currency conversion in real time.
 * [FluentValidation](https://fluentvalidation.net/)
 * [MediatR](https://github.com/jbogard/MediatR)
 * [DryIoC](https://github.com/dadhi/DryIoc)
+* [Coverlet](https://github.com/tonerdo/coverlet)
 
 ## Practices
 
@@ -31,6 +32,9 @@ Project to provide currency conversion in real time.
 * DRY Principle (Don't repeat yourself)
 * Ubiquitous Language
 * Dependency Injection
+* Unit Test 
+* Code Covered
+
 
 ## Tools
 
@@ -61,6 +65,11 @@ Project to provide currency conversion in real time.
 ## Postman Collection
 
 ![Screenshot](documentos/PostmanCollectionResult.PNG)
+
+## API Code Covered
+
+![Screenshot](documentos/PostmanCollectionResult.PNG)
+
 
 ## Run API Command Line
 
