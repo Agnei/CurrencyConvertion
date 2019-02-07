@@ -66,6 +66,8 @@ Project to provide currency conversion in real time.
 
 ![Screenshot](documentos/PostmanCollectionResult.PNG)
 
+File: **documentos\NeonCurrencyConvertion.postman_collection.json**
+
 ## API Code Covered
 
 ![Screenshot](documentos/CodeCovered.PNG)
